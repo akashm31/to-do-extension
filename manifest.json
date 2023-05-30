@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "To Do",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "action": {
+      "default_popup": "todo/build/index.html",
+      "default_icon": "hello_extensions.png"
+    },"content_scripts": [
+      {
+        "matches": ["https://*.google.com/"],
+        "js": ["static/js/content-script.js"]
+      }
+    ]   
+  }
